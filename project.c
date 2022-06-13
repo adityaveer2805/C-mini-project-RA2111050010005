@@ -71,8 +71,6 @@ void start()
         }
     }
 }
-
-// This will print main menu.
 void print_menu()
 {
     system("clear");
@@ -88,7 +86,6 @@ void print_menu()
     printf("\t\t\t\tEnter your Choice : ");
 }
 
-// This function will add contact into phonebook.
 void add_person()
 {
     system("clear");
@@ -114,12 +111,9 @@ void add_person()
     }
 }
 
-// By this we take contact information.
 void take_input(person *p)
 {
     system("clear");
-    // This getchar is for taking \n occured by previous functions.
-    // So that scanset in scanf will work properly.
     getchar();
     printf("Enter name : ");
     // Here we are using scanset '^' - >  until get
@@ -136,7 +130,6 @@ void take_input(person *p)
     
 }
 
-// This function will list contact available in phonebook.
 void list_record()
 {
     system("clear");
@@ -184,7 +177,6 @@ void list_record()
     }
 }
 
-// This function will search contact in phonebook.
 void search_person()
 {
     system("clear");
@@ -245,7 +237,7 @@ void search_person()
 
 }
 
-// This function will remove contact from phonebook.
+
 void remove_person()
 {
     system("clear");
